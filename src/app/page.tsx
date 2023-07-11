@@ -37,7 +37,7 @@ export default function Home() {
     <main>
       <Minamorl />
       <Slashes />
-      <motion.div initial={{y: 100}} animate={{y: 200}}>I'm a hacker</motion.div>
+      <motion.div initial={{y: 100}} animate={{y: 200}}>I&apos;m a hacker</motion.div>
       <Stars />
     </main>
   )
