@@ -17,6 +17,11 @@ body {
   color: rgb(var(--foreground-rgb));
   background-image: url("/minamorl.jpg");
   background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: calc(100% - 20px) 20%;
+  background-size: 90%;
+  background-position: 100% 20%;
+}
+@media (max-width: 767px) {
+  body {
+    background-size: cover;
+  }
 }
