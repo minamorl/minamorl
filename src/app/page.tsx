@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
    }))
   return <div className="text-4xl">
     {
-      obj.map((x, idx) => (<motion.div key={idx} initial={{x: x.startX, y: x.startY, position: 'absolute', 'ease': 'easeOut'}} animate={{rotate: idx, x: idx * 20, y: 100 + Math.random() * 10}}>{x.text}</motion.div>))
+      obj.map((x, idx) => (<motion.div key={idx} initial={{x: x.startX, y: x.startY, position: 'absolute'}} animate={{rotate: idx, x: idx * 20, y: 100 + Math.random() * 10}}>{x.text}</motion.div>))
     }
   </div>
   
@@ -20,7 +20,7 @@ const Slashes = () => {
   const slash = '/'
   
   return <div>
-    {Array(140).fill(slash).map((x, idx) => <motion.div key={idx} initial={{opacity: 0, x: 100 + Math.sin(idx) * 100, y:150, ease: 'easeOut', position: 'absolute'}} transition={{duration: idx/30}} animate={{opacity: 1, x: idx * 10, y: 150, scaleX: 4}}>{x}</motion.div>)}
+    {Array(140).fill(slash).map((x, idx) => <motion.div key={idx} initial={{opacity: 0, x: 100 + Math.sin(idx) * 100, y:150,  position: 'absolute'}} transition={{duration: idx/30}} animate={{opacity: 1, x: idx * 10, y: 150, scaleX: 4}}>{x}</motion.div>)}
   </div>
 
 }
