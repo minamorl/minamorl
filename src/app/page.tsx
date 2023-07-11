@@ -27,9 +27,13 @@ const Slashes = () => {
 
 const Stars = () => {
   const ast = "*"
-  return <div>
+  return <div className="stars text-4xl">
     { Array(400).fill(ast).map((x, idx) => <motion.div key={x} initial={{opacity: Math.cos(idx), position: 'absolute', x: Math.random() * 1000, y: Math.random() * 1000}} animate={{opacity: Math.cos(idx), position: 'absolute', x: Math.random() * 1000, y: Math.random() * 1000}} transition={{duration: 100}}>{x}</motion.div>) }
                              </div>
+}
+
+const Pfp = () => {
+  return <img className='rounded' src={'/minamorl.jpg'}/>
 }
 
 export default function Home() {
@@ -39,6 +43,7 @@ export default function Home() {
       <Slashes />
       <motion.div initial={{y: 100}} animate={{y: 200}}>I&apos;m a hacker</motion.div>
       <Stars />
+      <Pfp />
     </main>
   )
 }

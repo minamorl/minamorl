@@ -4,9 +4,13 @@
 
 
 :root {
-  --foreground-rgb: 255, 255, 255;
+  --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 0, 0, 0;
+}
+
+.stars {
+  color: rgb(255, 255, 255);
 }
 
 body {
