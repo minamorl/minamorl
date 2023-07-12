@@ -48,6 +48,7 @@ const Github = () => {
 export default function Home() {
   return (
     <main>
+      <div className="background-image"/>
       <Minamorl />
       <Slashes />
       <motion.div initial={{y: 100}} animate={{y: 200}}>I&apos;m a hacker</motion.div>
