@@ -17,7 +17,12 @@ body {
   background-color: black;
   overflow: hidden;
 }
-
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-y: scroll; /* Enable vertical scrolling */
+  }
+}
 .background-image {
   position: fixed;
   top: 0;
@@ -28,9 +33,14 @@ body {
   background-image: url("/minamorl.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transform: scale(1);
   transition: transform 0.2s ease-in-out;
   animation: mosh 5s infinite;
+}
+
+@media (max-width: 767px) {
+  .background-image {
+    background-size: contain; /* Adjust background size for smaller screens */
+  }
 }
 
 @keyframes mosh {
